@@ -1,0 +1,75 @@
+/* General Styling for Popular */
+.popular {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  height: 90vh;
+}
+
+.popular h1 {
+  color: #171717;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.popular hr {
+  width: 200px;
+  height: 6px;
+  border-radius: 10px;
+  background: #252525;
+}
+
+.popular-item {
+  margin-top: 50px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+/* For tablets (screen width <= 768px) */
+@media (max-width: 768px) {
+  .popular {
+    height: auto; 
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .popular h1 {
+    font-size: 36px;
+  }
+
+  .popular hr {
+    width: 150px;
+    height: 5px;
+  }
+
+  .popular-item {
+    gap: 20px;
+  }
+}
+
+/* For mobile devices (screen width <= 480px) */
+@media (max-width: 480px) {
+  .popular {
+    height: auto; 
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .popular h1 {
+    font-size: 28px;
+  }
+
+  .popular hr {
+    width: 100px;
+    height: 4px;
+  }
+
+  .popular-item {
+    gap: 10px;
+    flex-direction: column; 
+  }
+}
